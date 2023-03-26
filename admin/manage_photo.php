@@ -6,7 +6,7 @@ $cat_id = "";
 include("top.inc.php");
 include("left.inc.php");
 
-//select DB products的資料
+//select DB photo的資料
 if (isset($_GET['id']) && $_GET['id'] != '') {
     $id = mysqli_real_escape_string($conn, $_GET['id']);
     $display = mysqli_query($conn, "select * from photo where id = '$id'");
@@ -15,7 +15,7 @@ if (isset($_GET['id']) && $_GET['id'] != '') {
     $cat_id = $res['cat_id'];
 }
 
-//按下submit, select DB products的資料 
+//按下submit, select DB photo的資料 
 if (isset($_POST['submit'])) {
     $pname = mysqli_real_escape_string($conn, $_POST['pname']);
     $cat_id = mysqli_real_escape_string($conn, $_POST['cat_id']);
