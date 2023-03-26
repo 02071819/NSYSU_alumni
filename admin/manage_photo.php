@@ -84,8 +84,6 @@ if (isset($_POST['submit'])) {
                         echo "<option value=".$get['id'].">".$get['cname']."</option>";
                     }
                 }
-
-            //針對products這個database的cat_id去對應categories這個database的id 藉此對應品牌(categories)
             ?>
         </select>
 
