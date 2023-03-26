@@ -18,4 +18,4 @@ function get_photo($conn, $limit = '', $cat_id = '')
     }
     return $data;
 }
-// select products DB的所有資料
+// select photo DB的所有資料
