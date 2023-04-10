@@ -11,19 +11,19 @@ $query = mysqli_query($conn, "select * from categories");
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mamba Bootstrap Template - Index</title>
+  <title>NSYSU alumni30</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/top_icon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet"> -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -44,70 +44,6 @@ $query = mysqli_query($conn, "select * from categories");
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <!-- <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links d-none d-md-block">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-
-      <div class="logo me-auto">
-        <h1><a href="#">中山大學校友30週年</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">首頁</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about">關於我們</a></li> -->
-          <li><a class="nav-link scrollto" href="#services">活動資訊</a></li>
-          <li class="dropdown"><a href="#portfolio"><span>活動相簿</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <!-- <li><a href="#">81年次</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">82年次</a></li>
-              <li><a href="#">83年次</a></li>
-              <li><a href="#">84年次</a></li> -->
-              <?php
-              while ($data = mysqli_fetch_assoc($query)) {
-                echo " 
-                        <li><a href='year_photo.php?cat_id=" . $data['id'] . "'>" . $data['cname'] . "</a></li>
-                    ";
-              }
-              ?>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#team">報名與繳費</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
@@ -116,137 +52,68 @@ $query = mysqli_query($conn, "select * from categories");
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
-
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide1.jpg');">
-            <div class="carousel-container">
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/BANNER_1920X1257PX.jpg');">
+            <!-- <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">歡迎來到 <span>中山校友會</span></h2>
-                <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloribus culpa necessitatibus perspiciatis, facilis saepe ab recusandae libero sit dolorem,
-                  fuga nemo? Repellendus, harum quia. Aliquid minima totam architecto numquam. Enim.</p>
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
               </div>
-            </div>
+            </div> -->
+            <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path fill="#fff" fill-opacity="1" d="M0,192L20,208C40,224,80,256,120,240C160,224,200,160,240,128C280,96,320,96,360,117.3C400,139,440,181,480,181.3C520,181,560,139,600,122.7C640,107,680,117,720,133.3C760,149,800,171,840,192C880,213,920,235,960,229.3C1000,224,1040,192,1080,170.7C1120,149,1160,139,1200,154.7C1240,171,1280,213,1320,213.3C1360,213,1400,171,1420,149.3L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
+            </svg> -->
           </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide2.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
-                  ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
-                  voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide3.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi
-                  ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
-                  voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="navbar" class="navbar">
+        <ul>
+          <!-- <div class="head_icon">
+            <img src="./assets/img/header_icon/test_headicon.png" alt="" class="head_icon_home">
+            <li><a class="nav-link scrollto active" href="#hero">首頁</a></li>
+          </div> -->
+          <div class="head_icon">
+            <img src="./assets/img/header_icon/activity_icon.png" alt="">
+            <li><a class="nav-link scrollto" href="#services"><strong>活動資訊</strong></a></li>
+          </div>
+          <div class="head_icon">
+            <img src="./assets/img/header_icon/money_icon.png" alt="" class="head_icon_money">
+            <li><a class="nav-link scrollto" href="#team"><strong>報名與繳費</strong></a></li>
+          </div>
+          <div class="head_icon">
+            <img src="./assets/img/header_icon/photo_icon.png" alt="">
+            <li class="dropdown"><a href="#photo"><span><strong>活動紀錄</strong></span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <?php
+                while ($data = mysqli_fetch_assoc($query)) {
+                  echo " 
+                        <li><a href='year_photo.php?cat_id=" . $data['id'] . "'>" . $data['cname'] . "</a></li>
+                    ";
+                }
+                ?>
+              </ul>
+            </li>
+          </div>
+          <div class="head_icon">
+            <img src="./assets/img/header_icon/footer_icon.png" alt="" class="head_icon_footer">
+            <li><a class="nav-link scrollto" href="#footer"><strong>關於我們</strong></a></li>
+          </div>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </div><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <!-- <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/about/西子樓.png" class="img-fluid" alt="">
-            <a href="#" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title">
-              <h2>關於我們</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nemo necessitatibus quos eum ullam
-                aut labore possimus itaque aspernatur.
-                Iusto similique expedita delectus velit ex blanditiis dignissimos nostrum alias asperiores.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End About Us Section -->
-
-    <!-- ======= About Lists Section ======= -->
-    <!-- <section class="about-lists">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis
-              sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End About Lists Section -->
-
     <!-- ======= Counts Section ======= -->
-    <section class="counts section-bg">
+    <!-- <section class="counts section-bg">
       <div class="container">
 
         <div class="row">
@@ -286,302 +153,59 @@ $query = mysqli_query($conn, "select * from categories");
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section> -->
+    <!-- End Counts Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>活動資訊</h2>
+        <div class="services-activity d-flex justify-content-center ">
+          <div class="services-description">
+            <div class="section-title d-flex justify-content-center ">
+              <img src="./assets/img/header_icon/activity_icon.png" class="col-lg-2 col-xl-2">
+              <h2>活動資訊</h2>
+            </div>
+            <p>歲月沖淡了沙灘上的腳印，畢業30年後重聚，同窗敘舊，校園探秘，走入青春的時光迴廊之中~</p>
+            <br><br><a href="#" class="btn btn-light">了解更多</a>
+          </div>
+          <img src="assets/img/activity/活動資訊圖.jpg" alt="" class="services_activity_img">
         </div>
-
-        <div class="d-flex justify-content-center ">
-          <img src="assets/img/activity.png" alt="" class="col-lg-6 ">
-        </div>
-        <!-- <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-chat-left-dots"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-bounding-box"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-globe"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-broadcast"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar2-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-              soluta nobis est eligendi</p>
-          </div>
-        </div> -->
-
       </div>
     </section>
     <!-- End Services Section -->
 
-    <!-- ======= Our Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>活動相簿</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, vel eos porro perferendis impedit unde
-            quidem quibusdam suscipit!
-            Similique voluptates nam eligendi ex sunt quidem, reiciendis tenetur necessitatibus repellendus quae!</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">全部</li>
-              <li data-filter=".filter-app">81年次</li>
-              <li data-filter=".filter-card">82年次</li>
-              <li data-filter=".filter-web">83年次</li>
-              <li data-filter=".filter-web">84年次</li>
-            </ul>
+    <!-- ======= photo Section ======= -->
+    <section id="photo" class="photo">
+      <div class="container" data-aos="fade-up">
+        <div class="photo-activity d-flex justify-content-center ">
+          <img src="assets/img/photo_record/中山校區遠眺.jpg" alt="" class="photo_activity_img">
+          <div class="photo-description">
+            <div class="section-title d-flex justify-content-center ">
+              <img src="./assets/img/header_icon/photo_icon.png" class="col-lg-2 col-xl-2">
+              <h2>活動紀錄</h2>
+            </div>
+            <p>成立宗旨主要是服務及聯絡校友，增進校友情誼，並且能協助母校發展，進而達到服務社會的理想。</p>
+            <br><br><a href="#" class="btn btn-light">敬啟期待</a>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section> -->
-    <!-- End Our Portfolio Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
+    <!-- <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>報名與繳費</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, soluta.</p>
         </div>
-
-        <div class="row">
-
-          <!-- <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
       </div>
-    </section>
+    </section> -->
     <!-- End Our Team Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <!-- <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -646,7 +270,8 @@ $query = mysqli_query($conn, "select * from categories");
         </div>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Us Section ======= -->
     <!-- <section id="contact" class="contact">
@@ -718,45 +343,28 @@ $query = mysqli_query($conn, "select * from categories");
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>中山校友會</h3>
-            <p>
-              804高雄市鼓山區蓮海路70號<br>
-              No.70 Lien-hai Rd., Kaohsiung 804, Taiwan<br><br>
-              <strong>Phone:</strong> <br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="section-title d-flex">
+              <img src="./assets/img/header_icon/footer_icon.png" class="col-lg-2 col-xl-2">
+              <h2>關於我們</h2>
             </div>
-          </div>
+            <div class="footer-item">
+              <p>
+                <br>
+                校友服務暨社會責任中心 (校友服務組)<br>
+                電話 : (07) 525-5011~12<br>
+                Email : alumni_service@mail.nsysu.edu.tw<br>
+                地址 : 高雄市鼓山區蓮海路70號 (西子樓校友會館)<br>
+              </p>
+              <div class="social-links d-flex mt-5">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              </div>
+            </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">首頁</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">關於我們</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">活動資訊</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="team">報名與繳費</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
           </div>
 
           <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
@@ -772,21 +380,24 @@ $query = mysqli_query($conn, "select * from categories");
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>NSYSU</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
-    </div>
-  </footer><!-- End Footer -->
+    </div> -->
+  </footer>
+  <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top align-items-center justify-content-center">
+    <div class="back-to-top-item">
+      <img src="./assets/img/top_icon.png" class="back-to-top-img">
+      <p><strong>TOP</strong></p>
+    </div>
+    <!-- <i class="bi bi-arrow-up-short"></i> -->
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
