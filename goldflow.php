@@ -472,7 +472,6 @@
       $testId = $type.$number;
     }
 
-    echo $name.$inputBirth.$inputID.$inputPhone.$inputDepartment.$inputEmail.$inputAddr.$inputEname.$inputEphone.$eat.$go.$partner.$inputPname.$inputPbirth.$inputPID.$inputPphone.$Pgo.$payType;
     $sql2="INSERT INTO `register` (`uid`, `name`,`birth`, `id`, `phone`, `department`, `email`, `addr`, `eName`, `ePhone`, `eat`, `go`, `isPartner`, `pName`, `pBirth`, `pid`, `pPhone`, `pGo`, `TRPayType`) VALUES ('$testId', '$name', '$inputBirth', '$inputID', '$inputPhone', '$inputDepartment', '$inputEmail', '$inputAddr', '$inputEname', '$inputEphone', '$eat', '$go', '$partner', '$inputPname', '$inputPbirth', '$inputPID', '$inputPphone', '$Pgo', '$payType');";
     $result2 = mysqli_query($conn, $sql2);
     
