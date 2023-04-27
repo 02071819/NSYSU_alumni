@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost','root','yangyang1','alumnidb');
+$conn = mysqli_connect('localhost','root','','alumnidb');
 
 // if($conn){
 //     echo "Connection successfully";

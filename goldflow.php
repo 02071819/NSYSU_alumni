@@ -11,14 +11,14 @@
     $inputEname = $_POST['inputEname'];
     $inputEphone = $_POST['inputEphone'];
 
-    $eat = 'none';
-    if(isset($_POST['meat'])){
-      $eat = $_POST['meat'];
-    } else if(isset($_POST['veg'])){
-      $eat = $_POST['veg'];
-    } else if(isset($_POST['eggveg'])){
-      $eat = $_POST['eggveg'];
-    }
+    $eat = $_POST['eat'];
+    // if(isset($_POST['meat'])){
+    //   $eat = $_POST['meat'];
+    // } else if(isset($_POST['veg'])){
+    //   $eat = $_POST['veg'];
+    // } else if(isset($_POST['eggveg'])){
+    //   $eat = $_POST['eggveg'];
+    // }
 
     $go = 'none';
     if(isset($_POST['secret'])){
@@ -66,6 +66,7 @@
         }
         
       }
+
       if(isset($_POST['Pwater'])){
         if($Pgo=='none'){
           $Pgo = $_POST['Pwater'];
@@ -132,11 +133,11 @@
     <title>校友中心</title>
   </head>
   <body>
-    <div>
+    <div class="py-4">
       <h1 style="text-align: center">2023畢業 30 年校友回娘家-報名表單</h1>
     </div>
     <div id="registerForm" class="row justify-content-md-center">
-      <div class="col-md-10">
+      <div class="col-md-10 py-4 mb-2 border border-2 ">
         <p>離開學校30年的你~有多久沒有回來學校走走？</p>
         <p>
           中山路上的一步一履，有大家留下的足跡，年輕青澀的求學生活，熱血奮鬥的閃亮回憶，心靈繾綣的相依，成為我們離校30年生命歷程上的回憶點滴。
@@ -162,30 +163,32 @@
         <div class="row justify-content-md-center">
           <div class="col-md-5">
             <label for="uname" class="form-label">姓名</label>
-            <input type="text" class="form-control" name="uname" />
+            <input type="text" class="form-control" name="uname" required/>
           </div>
           <div class="col-md-5">
             <label for="inputBirth" class="form-label">生日</label>
-            <input type="text" class="form-control" name="inputBirth"/>
+            <input type="text" class="form-control" name="inputBirth" required/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputID" class="form-label">身分證字號</label>
             <input
               type="text"
               class="form-control"
               name="inputID"
+              required
             />
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputPhone" class="form-label">電話</label>
-            <input type="text" class="form-control" name="inputPhone"/>
+            <input type="text" class="form-control" name="inputPhone" required/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputDepartment" class="form-label">畢業系所</label>
             <select
               class="form-select form-select-sm"
               aria-label=".form-select-sm example"
               name="inputDepartment"
+              required
             >
               <option selected value="">請選擇畢業系所</option>
               <option value="中國文學系">中國文學系</option>
@@ -208,57 +211,61 @@
               <option value="中國與亞太區域研究所">中國與亞太區域研究所</option>
             </select>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2 ">
             <label for="inputEmail" class="form-label">email</label>
-            <input type="email" class="form-control" name="inputEmail"/>
+            <input type="email" class="form-control" name="inputEmail" required/>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-10 pt-2">
             <label for="inputAddr" class="form-label">地址</label>
-            <input type="text" class="form-control" name="inputAddr"/>
+            <input type="text" class="form-control" name="inputAddr" required/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputEname" class="form-label">緊急聯絡人姓名</label>
-            <input type="text" class="form-control" name="inputEname"/>
+            <input type="text" class="form-control" name="inputEname" required/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputEphone" class="form-label"
               >緊急聯絡人電話</label
             >
-            <input type="text" class="form-control" name="inputEphone"/>
+            <input type="text" class="form-control" name="inputEphone" required/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label>飲食</label>
-            <div class="col-2">
+            <div class="form-check col-2">
               <input
+                id = "eat1"
                 class="form-check-input"
-                type="checkbox"
-                name="meat"
+                type="radio"
+                name="eat"
                 value="葷"
+                checked
               />
-              <label class="form-check-label" for="meat">葷</label>
+              <label class="form-check-label" for="eat1">葷</label>
             </div>
-            <div class="col-2">
+            <div class="form-check col-2">
               <input
+                id = "eat2"
                 class="form-check-input"
-                type="checkbox"
-                name="veg"
+                type="radio"
+                name="eat"
                 value="全素"
               />
-              <label class="form-check-label" for="veg">全素</label>
+              <label class="form-check-label" for="eat2">全素</label>
             </div>
-            <div class="col-2">
+            <div class="form-check col-2">
               <input
+                id = "eat3"
                 class="form-check-input"
-                type="checkbox"
-                name="eggveg"
+                type="radio"
+                name="eat"
                 value="蛋奶素"
               />
-              <label class="form-check-label" for="eggveg"
+              <label class="form-check-label" for="eat3"
                 >蛋奶素</label
               >
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label>下午校園活動是否參與？</label>
             <div class="form-check">
               <input
@@ -297,7 +304,7 @@
               </label>
             </div>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-10 pt-2">
             <label>是否攜伴？</label>
             <div class="col-2">
               <input
@@ -318,24 +325,24 @@
               <label class="form-check-label" for="noPartner">否</label>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputPname" class="form-label">眷屬姓名</label>
             <input type="text" class="form-control" name="inputPname"/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputPbirth" class="form-label">眷屬生日</label>
             <input type="text" class="form-control" name="inputPbirth"/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputPID" class="form-label">眷屬身分證字號</label>
             <input type="text" class="form-control" name="inputPID"/>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-2">
             <label for="inputPphone" class="form-label">眷屬電話</label>
             <input type="text" class="form-control" name="inputPphone"/>
           </div>
           <div class="row justify-content-md-center">
-            <div class="col-md-10">
+            <div class="col-md-10 pt-2">
               <label>是否參與下午的活動？</label>
               <div class="form-check">
                 <input
@@ -375,7 +382,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 pt-2">
             <label for="payType" class="form-label">付款方式</label>
             <select
               class="form-select form-select-sm"
@@ -387,8 +394,10 @@
               <option value=2>ATM轉帳</option>
             </select>
           </div>
-            <div class="col-md-10">
-              <h2 class="">個人資料同意書</h2>
+            <div class="col-md-10 border mt-4 px-4">
+              <div>
+                <h2 class="row justify-content-center p-4">個人資料同意書</h2>
+              </div>
               <div>
                 本同意書說明本主辦單位（以下簡稱本單位）將如何處理本表單所蒐集到的個人資料。當您按下「提交」(即【資料送出按鈕】)，即表示您已閱讀、瞭解，並同意接受本同意書之所有內容及其後修改變更規定。依個人資料保護法規範，請您於【各項活動】前務必詳細閱讀本聲明書之各項內容，若您參與本單位所舉辦的活動，表示您同意【活動承辦單位】蒐集、處理、利用您與相關人員之下列個人資料，始繼續進行後續相關步驟。
               </div>
@@ -468,13 +477,13 @@
                   </li>
                 </ol>
               </div>
-              <div class="checkbox">
-                <label> <input type="checkbox" /> 本人同意</label>
+              <div class="checkbox mb-2">
+                <label> <input type="checkbox" required/> 本人同意</label>
               </div>
             </div>
           </div>
         </div>
-        <div style="justify-content: center">
+        <div class="d-grid gap-2 col-1 mx-auto p-2">
           <button type="submit" class="btn btn-primary" value="提交">
             提交
           </button>

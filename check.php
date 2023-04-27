@@ -3,9 +3,9 @@
     $uid = $_GET['uid'];
     $isPartner = $_GET['isPartner'];
     $payType = $_GET['payType'];
-    $amount = 100;
+    $amount = 3000;
     if($isPartner == '是'){
-        $amount = 200;
+        $amount = 4500;
     }
     $payTypeName = '信用卡';
     if($payType == 2){
@@ -31,11 +31,36 @@
     <title>校友中心</title>
   </head>
   <body>
-    <div class="row justify-content-md-center">繳款資訊確認</div>
-    <div class="container text-center">
+    <div><h1 class="row justify-content-md-center pt-4">繳款資訊確認</h1> </div>
+    <div class="d-flex p-4 bd-highlight">
+      <table class="table table-bordered">
+      <thead>
+      </thead>
+      <tbody>
+        <tr>
+          <td>姓名</td>
+          <td><?php echo $name ?></td>
+        </tr>
+        <tr>
+          <td>是否攜伴</td>
+          <td><?php echo $isPartner ?></td>
+        </tr>
+        <tr>
+          <td>應付金額</td>
+          <td><?php echo $amount ?></td>
+        </tr>
+        <tr>
+          <td>付款方式</td>
+          <td><?php echo $payTypeName ?></td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+<!-- 
+    <div class="container- text-center">
         <div class="row">
-            <div class="col-6 text-right">姓名</div>
-            <div class="col-6 text-left"><?php echo $name ?></div>
+            <div class="col-6 "><label>姓名</label></div>
+            <div class="col-6"><?php echo $name ?></div>
         </div>
         <div class="row">
             <div class="col-6">是否攜伴</div>
@@ -49,7 +74,7 @@
             <div class="col-6">付款方式</div>
             <div class="col-6"><?php echo $payTypeName ?></div>
         </div>
-    </div>
+    </div> -->
     <div class="container text-center">
         <form action="https://payment.nsysu.edu.tw/rcvserv/rcv.asp" method="post">
             <input type="hidden" name="pay type" value="3361">
@@ -57,10 +82,16 @@
             <input type="hidden" name="uid" value="<?php echo $uid ?>">
             <input type="hidden" name="amount" value="<?php echo $amount ?>">
             <input type="hidden" name="TRPayType" value="<?php echo $payType ?>">
+            <input type="hidden" name="reg_failpage" value="goldflow.php">
             <?php if($payType == '1'){ ?>
+                <input type="hidden" name="card_succpage" value="index.php">
+                <input type="hidden" name="card_failpage" value="goldflow.php">
                 <input type="hidden" name="currency" value="TWD">
+            <?php } else{?>
+                <input type="hidden" name="atm_succpage" value="index.php">
+                <input type="hidden" name="atm_failpage" value="goldflow.php">
             <?php } ?>
-            <input type="submit" name="submit" value="確認送出">
+            <input type="submit" name="submit" value="確認送出" onClick="submitForm">
         </form>
     </div>
     <!-- js -->
@@ -68,6 +99,7 @@
       function submitForm() {
         const uname = document.getElementById("uname");
         const paytype = "3361";
+        console.log("123")
       }
     </script>
   </body>
