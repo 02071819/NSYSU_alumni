@@ -31,6 +31,7 @@
     <header id="header">
         <div class="container">
             <div id="navbar" class="navbar">
+                <img src="../assets/img/slide/activity_top_page-0001.jpg" alt="" class="activity_top_img">
                 <ul>
                     <div class="head_icon">
                         <img src="../assets/img/header_icon/activity_icon.png" alt="">
@@ -67,15 +68,15 @@
                             <a href="#"><span class="depart_button">生物科學系</span></a>
                             <a href="#"><span class="depart_button">應用數學系</span></a>
                             <a href="#"><span class="depart_button">電機工程學系</span></a>
+                            <a href="#"><span class="depart_button">機械與機電工程學系</span></a>
+                            <a href="#"><span class="depart_button">材料與光電科學學系</span></a>
+                            <a href="#"><span class="depart_button">環境工程研究所</span></a>
                             <a href="#"><span class="depart_button">企業管理學系</span></a>
                             <a href="#"><span class="depart_button">資訊管理學系</span></a>
                             <a href="#"><span class="depart_button">財務管理學系</span></a>
-                            <a href="#"><span class="depart_button">海洋科學系</span></a>
-                            <a href="#"><span class="depart_button">機械與機電工程學系</span></a>
-                            <a href="#"><span class="depart_button">材料與光電科學學系</span></a>
                             <a href="#"><span class="depart_button">海洋生物科技暨資源學系</span></a>
-                            <a href="#"><span class="depart_button">環境工程研究所</span></a>
                             <a href="#"><span class="depart_button">海洋環境及工程學系</span></a>
+                            <a href="#"><span class="depart_button">海洋科學系</span></a>
                             <a href="#"><span class="depart_button">中國與亞太區域研究所</span></a>
                         </div>
                     </div>
@@ -128,7 +129,7 @@
                         </div>
                         <p>哈瑪星直通的西子灣隧道，其實內有玄機，壁面可通往隱藏版的防空設施，通道內曲折交錯，讓人有時空旅行的感覺。原本被視為禁地的防空隧道，如今成為空間活用的文化場域，打開了城市防空洞秘境 !</p>
                     </div>
-                    <img src="../assets/img/activity/活動資訊圖.jpg" alt="" class="services_activity_img">
+                    <img src="../assets/img/activity/activity1.jpg" alt="" class="services_activity_img">
                 </div>
             </div>
         </section>
@@ -148,7 +149,7 @@
                         <p>第2梯次時間 : 15 : 30 ~ 17 : 00</p><br>
                         <p>※為安全考量，患有心血管疾病和任何不適合游泳之狀況者請勿報名參加，若有違反後果自負。</p><br>
                     </div>
-                    <img src="../assets/img/activity/活動資訊圖.jpg" alt="" class="services_activity_img">
+                    <img src="../assets/img/activity/activity2.jpg" alt="" class="services_activity_img">
                 </div>
             </div>
         </section>
@@ -157,7 +158,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-        <a href="#" class="back-to-money align-items-center justify-content-center">
+        <a href="../goldflow.html" class="back-to-money align-items-center justify-content-center">
             <div class="back-to-money-item">
                 <!-- <img src="../assets/img/header_icon/money_icon.png" class="back-to-top-img"> -->
                 <p><strong>報名繳費</strong></p>
@@ -166,7 +167,7 @@
     </footer>
     <!-- End Footer -->
 
-    <a href="../goldflow.html" class="back-to-top align-items-center justify-content-center">
+    <a href="#" class="back-to-top align-items-center justify-content-center">
         <div class="back-to-top-item">
             <img src="../assets/img/top_icon.png" class="back-to-top-img">
             <p><strong>TOP</strong></p>
