@@ -1,4 +1,7 @@
 <?php
+  header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+  header("Cache-Control: post-check=0, pre-check=0", false);
+  header("Pragma: no-cache");
   include "connect.inc.php";
   if(isset($_POST['uname'])){
     $name = $_POST['uname'];
@@ -12,13 +15,6 @@
     $inputEphone = $_POST['inputEphone'];
 
     $eat = $_POST['eat'];
-    // if(isset($_POST['meat'])){
-    //   $eat = $_POST['meat'];
-    // } else if(isset($_POST['veg'])){
-    //   $eat = $_POST['veg'];
-    // } else if(isset($_POST['eggveg'])){
-    //   $eat = $_POST['eggveg'];
-    // }
 
     $go = 'none';
     if(isset($_POST['secret'])){
@@ -40,12 +36,8 @@
       $go = $_POST['noGo'];
     }
 
-    $partner = 'none';
-    if(isset($_POST['isPartner'])){
-      $partner = $_POST['isPartner'];
-    } else if(isset($_POST['noPartner'])){
-      $partner = $_POST['noPartner'];
-    }
+    $partner = $_POST['isPartner'];
+    
 
     $inputPname = 'none';
     $inputPbirth = 'none';
@@ -306,23 +298,26 @@
           </div>
           <div class="col-md-10 pt-2">
             <label>是否攜伴？</label>
-            <div class="col-2">
+            <div class="form-check col-2">
               <input
                 class="form-check-input"
-                type="checkbox"
+                type="radio"
                 name="isPartner"
                 value="是"
+                id="isPartnerY"
+                checked
               />
-              <label class="form-check-label" for="isPartner">是</label>
+              <label class="form-check-label" for="isPartnerY">是</label>
             </div>
-            <div class="col-2">
+            <div class="form-check col-2">
               <input
                 class="form-check-input"
-                type="checkbox"
-                name="noPartner"
+                type="radio"
+                name="isPartner"
                 value="否"
+                id="isPartnerN"
               />
-              <label class="form-check-label" for="noPartner">否</label>
+              <label class="form-check-label" for="isPartnerN">否</label>
             </div>
           </div>
           <div class="col-md-5 pt-2">
