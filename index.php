@@ -83,7 +83,7 @@ $query = mysqli_query($conn, "select * from categories");
           </div>
           <div class="head_icon">
             <img src="./assets/img/header_icon/money_icon.png" alt="" class="head_icon_money">
-            <li><a class="nav-link scrollto" href="./goldflow.html"><strong>報名與繳費</strong></a></li>
+            <li><a class="nav-link scrollto" href="goldflow.php"><strong>報名與繳費</strong></a></li>
           </div>
           <div class="head_icon">
             <img src="./assets/img/header_icon/photo_icon.png" alt="">

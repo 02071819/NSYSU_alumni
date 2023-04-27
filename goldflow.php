@@ -29,13 +29,6 @@
       }
       
     }
-    if(isset($_POST['mile'])){
-      if($go=='none'){
-        $go = $_POST['mile'];
-      } else {
-        $go = $go."、".$_POST['mile'];
-      }
-    }
     if(isset($_POST['water'])){
       if($go=='none'){
         $go = $_POST['water'];
@@ -72,13 +65,6 @@
           $Pgo = $Pgo."、".$_POST['Psecret'];
         }
         
-      }
-      if(isset($_POST['Pmile'])){
-        if($Pgo=='none'){
-          $Pgo = $_POST['Pmile'];
-        } else {
-          $Pgo = $Pgo."、".$_POST['Pmile'];
-        }
       }
       if(isset($_POST['Pwater'])){
         if($Pgo=='none'){
@@ -202,9 +188,24 @@
               name="inputDepartment"
             >
               <option selected value="">請選擇畢業系所</option>
-              <option value="資管系">資管系</option>
+              <option value="中國文學系">中國文學系</option>
+              <option value="外國語文系">外國語文系</option>
+              <option value="音樂學系">音樂學系</option>
               <option value="化學系">化學系</option>
-              <option value="資工系">資工系</option>
+              <option value="物理學系">物理學系</option>
+              <option value="生物科學系">生物科學系</option>
+              <option value="應用數學系">應用數學系</option>
+              <option value="電機工程學系">電機工程學系</option>
+              <option value="機械與機電工程學系">機械與機電工程學系</option>
+              <option value="材料與光電科學學系">材料與光電科學學系</option>
+              <option value="環境工程研究所">環境工程研究所</option>
+              <option value="企業管理學系">企業管理學系</option>
+              <option value="資訊管理學系">資訊管理學系</option>
+              <option value="財務管理學系">財務管理學系</option>
+              <option value="海洋生物科技暨資源學系">海洋生物科技暨資源學系</option>
+              <option value="海洋環境及工程學系">海洋環境及工程學系</option>
+              <option value="海洋科學系">海洋科學系</option>
+              <option value="中國與亞太區域研究所">中國與亞太區域研究所</option>
             </select>
           </div>
           <div class="col-md-5">
@@ -277,22 +278,11 @@
               <input
                 class="form-check-input"
                 type="checkbox"
-                value="萬里長城"
-                name="mile"
-              />
-              <label class="form-check-label" for="mile">
-                萬里長城
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="水域活動"
+                value="海域體驗 - 獨木舟"
                 name="water"
               />
               <label class="form-check-label" for="water">
-                水域活動
+                海域體驗 - 獨木舟
               </label>
             </div>
             <div class="form-check">
@@ -365,22 +355,11 @@
                 <input
                   class="form-check-input"
                   type="checkbox"
-                  value="萬里長城"
-                  name="Pmile"
-                />
-                <label class="form-check-label" for="Pmile">
-                  萬里長城
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="水域活動"
+                  value="海域體驗 - 獨木舟"
                   name="Pwater"
                 />
                 <label class="form-check-label" for="Pwater">
-                  水域活動
+                  海域體驗 - 獨木舟
                 </label>
               </div>
               <div class="form-check">

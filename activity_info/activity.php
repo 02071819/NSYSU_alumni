@@ -158,7 +158,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-        <a href="../goldflow.html" class="back-to-money align-items-center justify-content-center">
+        <a href="../goldflow.php" class="back-to-money align-items-center justify-content-center">
             <div class="back-to-money-item">
                 <!-- <img src="../assets/img/header_icon/money_icon.png" class="back-to-top-img"> -->
                 <p><strong>報名繳費</strong></p>
