@@ -53,7 +53,7 @@ $query = mysqli_query($conn, "select * from categories");
 
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/BANNER_1920X1257PX.jpg');">
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/首頁＿1280x720px.jpg');">
             <!-- <div class="carousel-container">
               <div class="carousel-content container">
               </div>
@@ -83,12 +83,12 @@ $query = mysqli_query($conn, "select * from categories");
           </div>
           <div class="head_icon">
             <img src="./assets/img/header_icon/money_icon.png" alt="" class="head_icon_money">
-            <li><a class="nav-link scrollto" href="goldflow.php"><strong>報名與繳費</strong></a></li>
+            <li><a class="nav-link scrollto" href="./goldflow.html"><strong>報名與繳費</strong></a></li>
           </div>
           <div class="head_icon">
             <img src="./assets/img/header_icon/photo_icon.png" alt="">
             <li class="dropdown"><a href="#photo"><span><strong>活動紀錄</strong></span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
+              <!-- <ul>
                 <?php
                 while ($data = mysqli_fetch_assoc($query)) {
                   echo " 
@@ -96,7 +96,7 @@ $query = mysqli_query($conn, "select * from categories");
                     ";
                 }
                 ?>
-              </ul>
+              </ul> -->
             </li>
           </div>
           <div class="head_icon">
@@ -166,7 +166,7 @@ $query = mysqli_query($conn, "select * from categories");
               <h2>活動資訊</h2>
             </div>
             <p>歲月沖淡了沙灘上的腳印，畢業30年後重聚，同窗敘舊，校園探秘，走入青春的時光迴廊之中~</p>
-            <br><br><a href="#" class="btn btn-light">了解更多</a>
+            <br><br><a href="./activity_info/activity.php" class="btn btn-light">了解更多</a>
           </div>
           <img src="assets/img/activity/活動資訊圖.jpg" alt="" class="services_activity_img">
         </div>
@@ -360,22 +360,11 @@ $query = mysqli_query($conn, "select * from categories");
                 地址 : 高雄市鼓山區蓮海路70號 (西子樓校友會館)<br>
               </p>
               <div class="social-links d-flex mt-5">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://asc.nsysu.edu.tw/" class="twitter" target="_blank"><img src="./assets/img/top_icon.png" class="back-to-top-img-link"></a>
+                <a href="https://www.facebook.com/nsysu.alumni/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
               </div>
             </div>
-
           </div>
-
-          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div> -->
-
         </div>
       </div>
     </div>
