@@ -401,5 +401,4 @@ $query = mysqli_query($conn, "select * from categories");
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
