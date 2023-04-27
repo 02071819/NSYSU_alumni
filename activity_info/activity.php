@@ -166,7 +166,7 @@
     </footer>
     <!-- End Footer -->
 
-    <a href="#" class="back-to-top align-items-center justify-content-center">
+    <a href="../goldflow.html" class="back-to-top align-items-center justify-content-center">
         <div class="back-to-top-item">
             <img src="../assets/img/top_icon.png" class="back-to-top-img">
             <p><strong>TOP</strong></p>
