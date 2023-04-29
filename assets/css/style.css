@@ -1307,6 +1307,14 @@ section {
   .photo-description {
     margin-right: 70px;
   }
+  .section-title {
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  .section-title h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 392px) {
@@ -1324,31 +1332,16 @@ section {
 }
 
 @media (max-width: 390px) {
+  .section-title img {
+    width: 60px;
+    height: 60px;
+  }
   .services-activity .services_activity_img {
     position: relative;
     width: 360px;
   }
   .services-description p {
     font-size: 16px;
-  }
-  .activity_info_btn {
-    position: relative;
-    right: 20px;
-  }
-}
-
-@media (max-width: 388px) {
-  .section-title {
-    align-items: center;
-    justify-content: center;
-    padding-right: 50px;
-  }
-  .section-title h2 {
-    font-size: 24px;
-  }
-  .section-title img {
-    width: 60px;
-    height: 60px;
   }
   .activity_info_btn {
     position: relative;
