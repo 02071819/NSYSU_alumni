@@ -1336,3 +1336,22 @@ section {
     right: 20px;
   }
 }
+
+@media (max-width: 388px) {
+  .section-title {
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  .section-title h2 {
+    font-size: 24px;
+  }
+  .section-title img {
+    width: 60px;
+    height: 60px;
+  }
+  .activity_info_btn {
+    position: relative;
+    right: 55px;
+  }
+}
