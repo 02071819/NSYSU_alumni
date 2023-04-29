@@ -34,13 +34,6 @@ $query = mysqli_query($conn, "select * from categories");
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Mamba
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -48,19 +41,10 @@ $query = mysqli_query($conn, "select * from categories");
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
         <div class="carousel-inner" role="listbox">
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/首頁＿1280x720px.jpg');">
-            <!-- <div class="carousel-container">
-              <div class="carousel-content container">
-              </div>
-            </div> -->
-            <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#fff" fill-opacity="1" d="M0,192L20,208C40,224,80,256,120,240C160,224,200,160,240,128C280,96,320,96,360,117.3C400,139,440,181,480,181.3C520,181,560,139,600,122.7C640,107,680,117,720,133.3C760,149,800,171,840,192C880,213,920,235,960,229.3C1000,224,1040,192,1080,170.7C1120,149,1160,139,1200,154.7C1240,171,1280,213,1320,213.3C1360,213,1400,171,1420,149.3L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path>
-            </svg> -->
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/BANNER_1920X1257PX.png');">
           </div>
         </div>
       </div>
@@ -70,13 +54,8 @@ $query = mysqli_query($conn, "select * from categories");
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-
       <div id="navbar" class="navbar">
         <ul>
-          <!-- <div class="head_icon">
-            <img src="./assets/img/header_icon/test_headicon.png" alt="" class="head_icon_home">
-            <li><a class="nav-link scrollto active" href="#hero">首頁</a></li>
-          </div> -->
           <div class="head_icon">
             <img src="./assets/img/header_icon/activity_icon.png" alt="">
             <li><a class="nav-link scrollto" href="#services"><strong>活動資訊</strong></a></li>
@@ -101,7 +80,7 @@ $query = mysqli_query($conn, "select * from categories");
           </div>
           <div class="head_icon">
             <img src="./assets/img/header_icon/footer_icon.png" alt="" class="head_icon_footer">
-            <li><a class="nav-link scrollto" href="#footer"><strong>關於我們</strong></a></li>
+            <li><a class="nav-link scrollto" href="#footer"><strong>聯絡我們</strong></a></li>
           </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -166,7 +145,7 @@ $query = mysqli_query($conn, "select * from categories");
               <h2>活動資訊</h2>
             </div>
             <p>歲月沖淡了沙灘上的腳印，畢業30年後重聚，同窗敘舊，校園探秘，走入青春的時光迴廊之中~</p>
-            <br><br><a href="./activity_info/activity.php" class="btn btn-light">了解更多</a>
+            <br><br><a href="./activity_info/activity.php"><span class="activity_info_btn">READ MORE</span></a>
           </div>
           <img src="assets/img/activity/活動資訊圖.jpg" alt="" class="services_activity_img">
         </div>
@@ -185,12 +164,158 @@ $query = mysqli_query($conn, "select * from categories");
               <h2>活動紀錄</h2>
             </div>
             <p>成立宗旨主要是服務及聯絡校友，增進校友情誼，並且能協助母校發展，進而達到服務社會的理想。</p>
-            <br><br><a href="#" class="btn btn-light">敬啟期待</a>
+            <br><br><a href="#"><span class="activity_info_btn">敬啟期待</span></a>
           </div>
         </div>
       </div>
     </section>
     <!-- End Services Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <!-- <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>報名與繳費</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, soluta.</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Our Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>常見問題</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up">
+            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+            <p>
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+              integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+              Lectus urna duis convallis convallis tellus.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
+              risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida
+              quis blandit turpis cursus in
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
+            <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
+            <p>
+              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc
+              vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in
+              metus vulputate eu scelerisque.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Contact Us Section -->
 
   </main><!-- End #main -->
 
@@ -199,11 +324,10 @@ $query = mysqli_query($conn, "select * from categories");
     <div class="footer-top">
       <div class="container" data-aos="fade-up">
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
+          <div class="footer-info">
             <div class="section-title d-flex">
               <img src="./assets/img/header_icon/footer_icon.png" class="col-lg-2 col-xl-2">
-              <h2>關於我們</h2>
+              <h2>聯絡我們</h2>
             </div>
             <div class="footer-item">
               <p>
@@ -213,16 +337,24 @@ $query = mysqli_query($conn, "select * from categories");
                 Email : alumni_service@mail.nsysu.edu.tw<br>
                 地址 : 高雄市鼓山區蓮海路70號 (西子樓校友會館)<br>
               </p>
-              <div class="social-links d-flex mt-5">
-                <a href="https://asc.nsysu.edu.tw/" class="twitter" target="_blank"><img src="./assets/img/top_icon.png" class="back-to-top-img-link"></a>
-                <a href="https://www.facebook.com/nsysu.alumni/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-              </div>
+            </div>
+            <div class="social-links d-flex mt-5">
+              <a href="https://www.facebook.com/nsysu.alumni/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://asc.nsysu.edu.tw/" class="go-to-web-link" target="_blank"><img src="./assets/img/header_icon/go-to-web_icon.jpg" class="back-to-top-img-link"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>NSYSU</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
   </footer>
   <!-- End Footer -->
 
@@ -231,7 +363,6 @@ $query = mysqli_query($conn, "select * from categories");
       <img src="./assets/img/top_icon.png" class="back-to-top-img">
       <p><strong>TOP</strong></p>
     </div>
-    <!-- <i class="bi bi-arrow-up-short"></i> -->
   </a>
 
   <!-- Vendor JS Files -->
@@ -247,4 +378,5 @@ $query = mysqli_query($conn, "select * from categories");
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
