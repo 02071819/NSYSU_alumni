@@ -1222,6 +1222,14 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  #hero {
+    height: 80vh;
+  }
+  #hero .carousel-item {
+    width: 100%;
+    height: 80vh;
+  }
+
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -1244,10 +1252,12 @@ section {
 
 
 @media (max-width: 500px) {
-  #hero,
+  #hero {
+    height: 50vh;
+  }
   #hero .carousel-item {
-    height: 120vh;
     width: 100%;
+    height: 50vh;
   }
   .services-description p {
     width: 300px;
